@@ -1,34 +1,35 @@
 body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: @primary;
+    background-color: @accent-green;
 
     header {
         display: flex;
         flex-direction: column;
         max-width: @width;
-        background-color: @primary;
-        color: @accent-green;
+        background-color: @accent-green;
+        color: primary;
         margin: 0 auto;
+        border: 1px solid @accent-gray;
 
         .title {
             flex-direction: row;
         }
 
         .img-box {
+            background-image: url("../img/tree.png");
+            background-attachment: fixed;
             flex-direction: row;
-
-            img {
-                max-width: 100%;
-            }
+            max-width: 100%;
+            min-height: 100vh;
         } /* end img-box */
-    } /* end home */
+    } /* end header */
 
     .container {
-        flex-direction: column;
+        flex-direction: row;
         max-width: @width;
         background-color: @body-color;
-        color: @accent-green;
+        color: @primary;
         margin: 0 auto;
 
     }
