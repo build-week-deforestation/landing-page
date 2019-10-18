@@ -130,33 +130,36 @@ body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-color: #3D7C47;
-  /* end header */
-}
-body header {
-  display: flex;
-  flex-direction: column;
-  max-width: 90vw;
-  background-color: #3D7C47;
-  color: primary;
-  margin: 0 auto;
-  border: 1px solid #E8ECF1;
-  /* end img-box */
-}
-body header .title {
-  flex-direction: row;
-}
-body header .img-box {
-  background-image: url("../img/tree.png");
-  background-attachment: fixed;
-  flex-direction: row;
-  max-width: 100%;
-  min-height: 100vh;
+  /*end container */
 }
 body .container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  background-color: #3D7C47;
+  color: #000;
+  margin: 0 auto;
+  /* end header */
+  /* end img-box */
+}
+body .container header {
+  display: flex;
   flex-direction: row;
-  max-width: 90vw;
-  background-color: #F0F8FF;
-  color: #03BD37;
+  background-color: #3D7C47;
+  color: primary;
+  width: 90vw;
+  margin: 0 auto;
+}
+body .container header .title {
+  flex-direction: row;
+}
+body .container .img-box {
+  flex-direction: row;
+  background-image: url("../img/tree-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 90vw;
+  max-height: 100vh;
   margin: 0 auto;
 }
 /* end body */
@@ -169,31 +172,29 @@ body .container {
   top: 0;
 }
 .nav-links li {
-  border: 1px solid #F0F8FF;
+  border-top: 1px solid #3D7C47;
+  background-color: rgba(240, 248, 254, 0.8);
   width: 2rem;
   padding: 0.3rem;
   color: #F0F8FF;
 }
-.nav-links li:hover {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #F0F8FF;
-  padding: 0.3rem;
+.nav-links li:first-child {
+  border-top: none;
 }
 .nav-links li a {
   writing-mode: vertical-lr;
   font-size: 1rem;
-  color: #F0F8FF;
+  color: #000;
   text-decoration: none;
 }
 .nav-links li:hover a {
   writing-mode: vertical-lr;
   font-size: 1rem;
   text-decoration-line: line-through;
-  color: #F0F8FF;
 }
 .title {
   padding: 1rem;
+  width: 90vw;
 }
 .title h1 {
   font-size: 3rem;
@@ -202,16 +203,40 @@ body .container {
 }
 h2 {
   font-size: 2rem;
-  background-color: rgba(240, 248, 254, 0.7);
+  background-color: rgba(240, 248, 254, 0.8);
   padding: 0.5rem;
   text-align: end;
 }
 p {
   font-size: 1rem;
   line-height: 1.5rem;
-  background-color: rgba(240, 248, 254, 0.7);
+  background-color: rgba(240, 248, 254, 0.8);
   padding: 0.5rem;
   text-align: end;
+}
+.body-text {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #03BD37;
+  padding-top: -2rem;
+  line-height: 5rem;
+}
+.body-text span {
+  display: block;
+  margin-top: -1rem;
+}
+.register {
+  padding-top: 2rem;
+}
+.register a {
+  font-size: 3rem;
+  color: #03BD37;
+}
+.register a:hover {
+  text-decoration: line-through;
+}
+footer {
+  color: #3D7C47;
 }
 /*     Scrollbar styling  -- does not work on Firefox, Internet Explorer, or Edge  */
 ::-webkit-scrollbar {
@@ -225,4 +250,8 @@ p {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #3D7C47;
+}
+::selection {
+  background: #2C82C9;
+  /* WebKit/Blink Browsers */
 }

@@ -10,23 +10,23 @@
 }
 
 .nav-links li {
-    border: 1px solid @body-color;
+    border-top: 1px solid @accent-green;
+    background-color: @bg-color;
     width: 2rem;
     padding: 0.3rem;
     color: @body-color;
 }
 
-.nav-links li:hover {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid @body-color;
-    padding: 0.3rem;
+.nav-links li:first-child {
+    border-top: none;
 }
+
+
 
 .nav-links li a {
     writing-mode: vertical-lr;
     font-size: 1rem;
-    color: @body-color;
+    color: @accent-black;
     text-decoration: none;
 }
 
@@ -34,5 +34,4 @@
     writing-mode: vertical-lr;
     font-size: 1rem;
     text-decoration-line: line-through;
-    color: @body-color;
 }

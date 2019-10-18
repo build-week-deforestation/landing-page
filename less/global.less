@@ -3,34 +3,35 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: @accent-green;
 
-    header {
+    .container {
         display: flex;
         flex-direction: column;
-        max-width: @width;
+        width: @width;
         background-color: @accent-green;
-        color: primary;
+        color: @accent-black;
         margin: 0 auto;
-        border: 1px solid @accent-gray;
 
-        .title {
+        header {
+            display: flex;
             flex-direction: row;
-        }
+            background-color: @accent-green;
+            color: primary;
+            width: @width;
+            margin: 0 auto;
+
+            .title {
+                flex-direction: row;
+            }
+        } /* end header */
 
         .img-box {
-            background-image: url("../img/tree.png");
-            background-attachment: fixed;
             flex-direction: row;
-            max-width: 100%;
-            min-height: 100vh;
+            background-image: url("../img/tree-bg.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: @width;
+            max-height: 100vh;
+            margin: 0 auto;
         } /* end img-box */
-    } /* end header */
-
-    .container {
-        flex-direction: row;
-        max-width: @width;
-        background-color: @body-color;
-        color: @primary;
-        margin: 0 auto;
-
-    }
+    } /*end container */
 } /* end body */
