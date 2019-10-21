@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #3D7C47;
+  /*end container */
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  background-color: #3D7C47;
+  color: #000;
+  margin: 0 auto;
+  /* end header */
+  /* end img-box */
+}
+body .container header {
+  display: flex;
+  flex-direction: row;
+  background-color: #3D7C47;
+  color: primary;
+  width: 90vw;
+  margin: 0 auto;
+}
+body .container header .title {
+  flex-direction: row;
+}
+body .container .img-box {
+  flex-direction: row;
+  background-image: url("../img/tree-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 90vw;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+/* end body */
+.nav-links {
+  display: column;
+  position: relative;
+  font-size: 1rem;
+  width: 5%;
+  right: 0;
+  top: 0;
+}
+.nav-links li {
+  border-top: 1px solid #3D7C47;
+  background-color: rgba(240, 248, 254, 0.8);
+  width: 2rem;
+  padding: 0.3rem;
+  color: #F0F8FF;
+}
+.nav-links li:first-child {
+  border-top: none;
+}
+.nav-links li a {
+  writing-mode: vertical-lr;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+.nav-links li:hover a {
+  writing-mode: vertical-lr;
+  font-size: 1rem;
+  text-decoration-line: line-through;
+}
+.title {
+  padding: 1rem;
+  width: 90vw;
+}
+.title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #03BD37;
+}
+h2 {
+  font-size: 2rem;
+  background-color: rgba(240, 248, 254, 0.8);
+  padding: 0.5rem;
+  text-align: end;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: rgba(240, 248, 254, 0.8);
+  padding: 0.5rem;
+  text-align: end;
+}
+.body-text {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #03BD37;
+  padding-top: -2rem;
+  line-height: 5rem;
+}
+.body-text span {
+  display: block;
+  margin-top: -1rem;
+}
+.register {
+  padding-top: 2rem;
+}
+.register a {
+  font-size: 3rem;
+  color: #03BD37;
+}
+.register a:hover {
+  text-decoration: line-through;
+}
+footer {
+  color: #3D7C47;
+}
+/*     Scrollbar styling  -- does not work on Firefox, Internet Explorer, or Edge  */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: #E8ECF1;
+}
+::-webkit-scrollbar-thumb {
+  background: #03BD37;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D7C47;
+}
+::selection {
+  background: #2C82C9;
+  /* WebKit/Blink Browsers */
+}
