@@ -1,11 +1,13 @@
-body {
+// width below 500px
+
+ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: @accent-green;
 
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: @col;
         background-color: @accent-green;
         color: @accent-black;
         .width();
@@ -23,21 +25,21 @@ body {
         } /* end header */
 
         .img-box {
-            background-image: url("../img/tree-bg.png");
+            background-image: url("../img/tree-v.png");
             background-attachment: fixed;
             background-repeat: no-repeat;
             .width();
             max-height: 100vh;
 
-                nav {
-                    flex-direction: column;
+                nav, .about {
+                    flex-direction: @col;
                 }
 
-                .about {
-                    flex-direction: column;
-                }
+            @media (min-width: 500px) {background-image: url("../img/tree-bg.png");}
 
-            }
         } /* end img-box */
     } /*end container */
+
+
 } /* end body */
+

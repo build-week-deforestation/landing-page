@@ -1,4 +1,4 @@
-
+// width below 800px
 
 .nav-links {
     position: relative;
@@ -9,9 +9,11 @@
 .nav-links li {
     border-top: 1px solid @accent-green;
     background-color: @bg-color;
-    width: @two;
+    width: @four;
     padding: 0.3rem;
     color: @body-color;
+
+    @media (min-width: 800px){width: @two;}
 }
 
 .nav-links li:first-child {
@@ -21,10 +23,11 @@
 
 
 .nav-links li a {
-    writing-mode: vertical-lr;
     font-size: @one;
     color: @accent-black;
     text-decoration: none;
+
+    @media (min-width: 800px) {writing-mode: vertical-lr;}
 }
 
 .nav-links li:hover a {

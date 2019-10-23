@@ -1,3 +1,7 @@
+.width {
+  width: 90vw;
+  margin: 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,9 +139,9 @@ body {
 body .container {
   display: flex;
   flex-direction: column;
-  width: 90vw;
   background-color: #3D7C47;
   color: #000;
+  width: 90vw;
   margin: 0 auto;
   /* end header */
   /* end img-box */
@@ -154,22 +158,21 @@ body .container header .title {
   flex-direction: row;
 }
 body .container .img-box {
-  background-image: url("../img/tree-bg.png");
+  background-image: url("../img/tree-v.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 90vw;
-  max-height: 100vh;
   margin: 0 auto;
+  max-height: 100vh;
 }
-body .container .img-box .row {
-  flex-direction: row;
-  width: 100%;
-}
-body .container .img-box .row nav {
+body .container .img-box nav,
+body .container .img-box .about {
   flex-direction: column;
 }
-body .container .img-box .row .about {
-  flex-direction: column;
+@media (min-width: 500px) {
+  body .container .img-box {
+    background-image: url("../img/tree-bg.png");
+  }
 }
 /* end body */
 .nav-links {
@@ -179,22 +182,29 @@ body .container .img-box .row .about {
 .nav-links li {
   border-top: 1px solid #3D7C47;
   background-color: rgba(240, 248, 254, 0.8);
-  width: 2rem;
+  width: 4rem;
   padding: 0.3rem;
   color: #F0F8FF;
+}
+@media (min-width: 800px) {
+  .nav-links li {
+    width: 2rem;
+  }
 }
 .nav-links li:first-child {
   border-top: none;
 }
 .nav-links li a {
-  writing-mode: vertical-lr;
   font-size: 1rem;
   color: #000;
   text-decoration: none;
 }
+@media (min-width: 800px) {
+  .nav-links li a {
+    writing-mode: vertical-lr;
+  }
+}
 .nav-links li:hover a {
-  writing-mode: vertical-lr;
-  font-size: 1rem;
   text-decoration-line: line-through;
 }
 .title {
@@ -202,15 +212,30 @@ body .container .img-box .row .about {
   width: 90vw;
 }
 .title h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #03BD37;
 }
+@media (min-width: 500px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: rgba(240, 248, 254, 0.8);
   padding: 0.5rem;
   text-align: end;
+}
+@media (min-width: 800px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 p {
   font-size: 1rem;
@@ -220,22 +245,45 @@ p {
   text-align: end;
 }
 .body-text {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #03BD37;
   padding-top: -2rem;
-  line-height: 5rem;
+  line-height: 2.5rem;
 }
 .body-text span {
   display: block;
   margin-top: -1rem;
 }
+@media (min-width: 500px) {
+  .body-text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .body-text {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .body-text {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
 .register {
   padding-top: 2rem;
 }
 .register a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #03BD37;
+}
+@media (min-width: 800px) {
+  .register a {
+    font-size: 3rem;
+  }
 }
 .register a:hover {
   text-decoration: line-through;
