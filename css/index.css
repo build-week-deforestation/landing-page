@@ -154,7 +154,6 @@ body .container header .title {
   flex-direction: row;
 }
 body .container .img-box {
-  flex-direction: row;
   background-image: url("../img/tree-bg.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -162,14 +161,20 @@ body .container .img-box {
   max-height: 100vh;
   margin: 0 auto;
 }
+body .container .img-box .row {
+  flex-direction: row;
+  width: 100%;
+}
+body .container .img-box .row nav {
+  flex-direction: column;
+}
+body .container .img-box .row .about {
+  flex-direction: column;
+}
 /* end body */
 .nav-links {
-  display: column;
   position: relative;
   font-size: 1rem;
-  width: 5%;
-  right: 0;
-  top: 0;
 }
 .nav-links li {
   border-top: 1px solid #3D7C47;
@@ -234,6 +239,9 @@ p {
 }
 .register a:hover {
   text-decoration: line-through;
+}
+.italics {
+  font-style: italic;
 }
 footer {
   color: #3D7C47;

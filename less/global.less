@@ -6,18 +6,16 @@ body {
     .container {
         display: flex;
         flex-direction: column;
-        width: @width;
         background-color: @accent-green;
         color: @accent-black;
-        margin: 0 auto;
+        .width();
 
         header {
             display: flex;
             flex-direction: row;
             background-color: @accent-green;
             color: primary;
-            width: @width;
-            margin: 0 auto;
+            .width();
 
             .title {
                 flex-direction: row;
@@ -25,13 +23,21 @@ body {
         } /* end header */
 
         .img-box {
-            flex-direction: row;
             background-image: url("../img/tree-bg.png");
             background-attachment: fixed;
             background-repeat: no-repeat;
-            width: @width;
+            .width();
             max-height: 100vh;
-            margin: 0 auto;
+
+                nav {
+                    flex-direction: column;
+                }
+
+                .about {
+                    flex-direction: column;
+                }
+
+            }
         } /* end img-box */
     } /*end container */
 } /* end body */

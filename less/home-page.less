@@ -1,36 +1,36 @@
 .title {
-    padding: 1rem;
+    padding: @one;
     width: @width;
 
     h1{
-        font-size: 3rem;
+        font-size: @three;
         font-weight: bold;
         color: @primary;
     }
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: @two;
     background-color: @bg-color;
-    padding: 0.5rem;
+    padding: @half;
     text-align: end;
 }
 
 
 p {
-    font-size: 1rem;
+    font-size: @one;
     line-height: 1.5rem;
     background-color: @bg-color;
-    padding: 0.5rem;
+    padding: @half;
     text-align: end;
 }
 
 .body-text {
-    font-size: 5rem;
+    font-size: @five;
     font-weight: bold;
     color: @primary;
     padding-top: -2rem;;
-    line-height: 5rem;
+    line-height: @five;
     
     span {
         display: block;
@@ -39,16 +39,20 @@ p {
 }
 
 .register {
-    padding-top: 2rem;
+    padding-top: @two;
 }
 
 .register a {
-    font-size: 3rem;
+    font-size: @three;
     color: @primary;
 }
 
 .register a:hover {
     text-decoration: line-through;
+}
+
+.italics {
+    font-style: italic;
 }
 
 footer {
