@@ -192,6 +192,27 @@ body .container .img-box {
   font-size: 1rem;
   text-decoration-line: line-through;
 }
+.navi-links {
+  writing-mode: vertical-lr;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+.navi-links a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  writing-mode: vertical-lr;
+}
+.navi-links a:hover {
+  text-decoration-line: line-through;
+  color: gainsboro;
+  background: black;
+  border-radius: 15px;
+}
 .title {
   padding: 1rem;
   width: 90vw;
@@ -254,4 +275,22 @@ footer {
 ::selection {
   background: #2C82C9;
   /* WebKit/Blink Browsers */
+}
+.logo {
+  width: 110px;
+  height: 135px;
+}
+.pictures {
+  display: flex;
+}
+.pictures div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.pictures p {
+  background: transparent;
+}
+.pictures img {
+  border-radius: 15px;
 }
