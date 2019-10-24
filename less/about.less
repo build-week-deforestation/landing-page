@@ -6,12 +6,15 @@
 
 .pictures{
  display: flex;
+ max-height: 100vh;
 
 }
 .pictures div{
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin:  20px;
+  transition:  4s;
 }
 .pictures p{
   background: transparent;
@@ -19,8 +22,17 @@
 
 .pictures img{
   border-radius: 15px;
-}
+  max-height: 100vh;
 
+
+
+@media(max-width: 500px) {
+  .pictures div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
 
 
 
