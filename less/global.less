@@ -1,23 +1,23 @@
-body {
+// width below 500px
+
+ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: @accent-green;
 
     .container {
         display: flex;
-        flex-direction: column;
-        width: @width;
+        flex-direction: @col;
         background-color: @accent-green;
         color: @accent-black;
-        margin: 0 auto;
+        .width();
 
         header {
             display: flex;
             flex-direction: row;
             background-color: @accent-green;
             color: primary;
-            width: @width;
-            margin: 0 auto;
+            .width();
 
             .title {
                 flex-direction: row;
@@ -25,13 +25,21 @@ body {
         } /* end header */
 
         .img-box {
-            flex-direction: row;
-            background-image: url("../img/tree-bg.png");
+            background-image: url("../img/tree-v.png");
             background-attachment: fixed;
             background-repeat: no-repeat;
-            width: @width;
+            .width();
             max-height: 100vh;
-            margin: 0 auto;
+
+                nav, .about {
+                    flex-direction: @col;
+                }
+
+            @media (min-width: 500px) {background-image: url("../img/tree-bg.png");}
+
         } /* end img-box */
     } /*end container */
+
+
 } /* end body */
+
