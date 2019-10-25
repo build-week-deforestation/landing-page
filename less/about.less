@@ -1,38 +1,253 @@
-.logo {
-  width: 110px;
-  height: 135px;
- 
+// .logo {
+//   width: 110px;
+//   height: 135px;
+
+html{
+	font-family: 'Dancing Script', cursive;
+	background-color:@primary;
+
+}
+body{
+	margin: 0px auto;
+	-webkit-animation:slide 1s forwards;
+	animation: slide 1s forwards;
+
+}
+
+.container {
+	width: 900px;
+	text-align: center;
+	margin: 0px auto;
+
+
+
+}
+
+header{
+	 background-color:#5b7989;
+	 display: flex;
+	justify-content:space-around;
+	height:100%;
+	border-radius: 13px 13px 0px 0px;
+
+}
+h1{
+
+ text-shadow:  2px #02010a;
+ color: white;
+}
+
+nav{
+
+	width: 355px;
+
+}
+nav ul{
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+	list-style: none;
+
+}
+a{
+	text-decoration: none;
+		color: white;
+}
+// .contenido{
+// 	width:97.75%;
+//   display:flex;
+// 	justify-content: center;
+//   background-color: #82c3a6;
+// 	padding: 20px 10px;
+// 	margin: 0 auto;
+
+
+// }
+// .primera div{
+//   width:33%;
+
+// }
+// .primera img{
+// 	width: 700px;
+// 	height: 300px;
+// 	box-shadow: 2px  0px #02010a;
+
+// }
+
+
+
+
+
+// .secundaria {
+// 	width: 100%;
+// 	padding: 18px 0px;
+// 	justify-content: space-around;
+//   display:flex;
+// 	background-color: #d5c75f;
+// 	border:1px solid;
+
+// 	}
+	/*comienza el estilo div de inicio*/
+	.uno{
+		width: 33%;
+
+	}
+	.dos{
+		width: 33%;
+
+	}
+.secundaria img {
+  width: 100%;
+	box-shadow: 2px  0px #02010a;
+}
+
+ .imagenI:hover{
+	transform: rotate(10deg);
+}
+.imagenD:hover{
+	transform: translate(10px , 20px);
+
+}
+
+footer{
+	background: #C6d5c5;
+	width: 100%;
+	border-radius: 0px 0px 8px 8px;
+	 height:90%;
+	 padding: 1px 0;
+
+}
+.informacion  ul{
+	display: flex;
+	justify-content:space-around;
+	list-style: none;
+	font-style: oblique;
+}
+
+/*estilos de paisajes html*/
+.imagenes{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 8px 0;
+	background-color:@primary;
+
+}
+.imagenes div{
+	width: 33%
+
+}
+.imagenes img{
+	box-shadow: 2px  0px #02010a;
+}
+
+ .f1 img {
+	-webkit-filter: blur(10px);
+	 filter: blur(10px);
+	 width: 70%;
+	 box-shadow: 2px  0px #02010a;
+
+
+}
+.f2 img {
+ -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	width: 70%;
+
+
+}
+
+.f3 img {
+ -webkit-filter: sepia(100%);
+	filter: sepia(90%);
+  width: 70%;
+}
+.f4 img {
+ -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  width: 70%;
+}
+.f5 img{
+	width: 70%;
+}
+
+.f6 img {
+ -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+ width: 70%;
 }
 
 
-.pictures img{
-  
-  width: 10%;
-  max-width: 960px;
-  margin: 20px;
-  border-radius: 15px;
-  margin: 20px;
-  transition:  4s;
-
+.principal{
+ padding: 10px 0;
+	background-color:#d5c75f;
 }
 
-  @media (min-width: 1000px){
-    .pictures  img{
-        width: 33.3%;
-       
-    }
-  }
 
-  @media (min-width: 500px) {
-    .pictures  img{
-      .pictures  img{
-        width: 50%;
-       
-  }
+@media(max-width: 900px){
+	.container{
+		width: 100%;
+	}
+//        .secundaria  {
+// 				width: 100%;
+//  		  flex-direction:column;
+//    	}
+// 		.secundaria div{
+// 			width: 95%;
+// 		}
+// 		.secundaria img{
+// 			width:85%;
+// 	}
+// 	.imagenes div {
+// 		width: 95%;
+// 	}
+// 	.imagenes img{
+// 		width: 85%;
 
-  
-  
-  
-  
-  
+// 	}
+// 	.retratos div {
+// 		width: 95%;
+// 	}
+// 	.retratos img{
+// 		width: 85%;
 
+// 	}
+
+// 		.informacion ul{
+// 			flex-direction: column;
+
+//    }
+// 	 .informacion ul li{
+// 		 width: 90%;
+// 		 text-align: center;
+// 	 }
+// 	 .contenido img{
+// 		 width: 90%;
+// 		 height: 200px;
+// 	 }
+// 	 header{
+
+// 		 flex-direction: column;
+
+// 	 }
+// 	 header h1 {
+// 		 width: 90%;
+// 		 text-align: center;
+// 		 align-self: center;
+// 	 }
+// 	 header nav{
+// 		 width: 90%;
+//  }
+  .principal .imagenes{
+		flex-direction: column;
+
+	}
+	 .imagenes div{
+     width: 100%;
+	}
+	.almacen .retratos {
+		flex-direction: column;
+
+	}
+
+}
