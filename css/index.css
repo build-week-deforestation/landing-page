@@ -161,6 +161,7 @@ body .container .img-box {
   background-image: url("../img/tree-v.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: 100%;
   width: 90vw;
   margin: 0 auto;
   max-height: 100vh;
