@@ -293,8 +293,4 @@ footer {
   margin: 20px;
   transition: 4s;
 }
-@media (min-width: 1000px) {
-  .pictures img {
-    width: 50%;
-  }
-}
+
