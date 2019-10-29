@@ -165,6 +165,7 @@ body .container .img-box {
   width: 90vw;
   margin: 0 auto;
   max-height: 100vh;
+  align-content: center;
 }
 body .container .img-box nav,
 body .container .img-box .about {
